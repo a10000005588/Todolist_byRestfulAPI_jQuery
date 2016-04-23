@@ -12,10 +12,10 @@ var listName = (function() {
   }
 
   function _bindEvent(){
-    $listNameWrap.on('click.setList', '#btn-setList', _handleSetList);
+    $listNameWrap.on('click.setList', '#btn-setList', handleSetList);
   }
 
-  function _handleSetList(){
+  function handleSetList(){
     var listName = $listNameWrap.find("#listName").val();
     alert("List name is "+ listName);
 
@@ -45,4 +45,4 @@ var listName = (function() {
 		init,
 		handleSetList
 	}
-})();  //暨德後面要家 () 才會在html載入時注入並執行該閉包的函式
+})();  //記得後面要家 () 才會在html載入時注入並執行該閉包的函式
