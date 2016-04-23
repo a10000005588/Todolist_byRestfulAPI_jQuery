@@ -103,7 +103,7 @@ var todoList = (function(){
            			</td>
            			<td class="taskName">
            					${$('<textarea>').text(data.text).html()}
-           					<span class="glyphicon glyphicon-remove btn-del pull-right" aria-hidden="true"></span>
+           					<span class="glyphicon glyphicon-trash btn-delete pull-right" aria-hidden="true"></span>
            			</td>
            </tr>`
          );
