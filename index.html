@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>1 Col Portfolio - Start Bootstrap Template</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-2.2.3.min.js" integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+<h1>A simple Todolist by jquery</h1>
+<div id="wrapper" class="container">
+    <div class="row">
+      <div id="listNameWrap" class="col-md-6 col-md-offset-3">
+        <div class="input-group">
+          <span class="input-group-btn">
+            <button id='btn-setList' class="btn btn-default" type="button">Go</button>
+          </span>
+          <input type="text" class="form-control" id="listName"  placeholder="add a list...">
+        </div><!-- /input-group -->
+      </div><!-- /.col-lg-6 -->
+    </div>
+    <div class="row">
+      <div id="inputTaskWrap" class="col-md-6 col-md-offset-3">
+        <div class="input-group">
+          <span class="input-group-btn">
+            <button id="addTaskButton" class="btn btn-default" type="button">Add</button>
+          </span>
+          <input type="text" id="newtaskText"  class="form-control" placeholder="New task...">
+        </div><!-- /input-group -->
+      </div><!-- /.col-lg-6 -->
+    </div>
+
+    <div class="row">
+  				<div class="col-md-6 col-md-offset-3">
+    					<table id="todoList" class="table table-hover">
+    						<thead>
+    							<tr><th>任務狀態</th><th>該做的東西有什麼</th></tr>
+    						</thead>
+    						<tbody>
+                    <!-- list tasks.... -->
+    						</tbody>
+    					</table>
+  				</div>
+  	</div>
+</div>
+
+    <!-- jQuery -->
+
+    <script src="js/listname.js"></script>
+    <script src="js/inputbar.js"></script>
+    <script src="js/todolist.js"></script>
+
+    <!-- <script src="js/inputbar.js"></script> -->
+    <script>
+  			$(document).ready(function() {
+  				window.BASE_URL = 'https://richegg.top/';
+          todoList.init();  //利用閉包將必要或是需要public出來的函式給引出來
+  				listName.init();  //防止 toList listName 中有相同的函式被重覆蓋到
+          inputBar.init();
+  			});
+  		</script>
+
+</body>
+</html>

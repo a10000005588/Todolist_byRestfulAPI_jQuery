@@ -1,0 +1,20 @@
+h1{
+	text-align: center;
+}
+#todoList th,
+#todoList td {
+	text-align: center;
+}
+
+.wrapper{
+	margin:20px;
+}
+
+#todoList .btn-delete {
+	color: blue;
+	cursor: pointer;
+	display: none;
+}
+#todoList .tasks:hover .btn-delete {
+	display: initial;
+}
